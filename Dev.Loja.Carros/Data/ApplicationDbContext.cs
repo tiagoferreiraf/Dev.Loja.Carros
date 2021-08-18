@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Dev.Loja.Carros.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,5 +13,6 @@ namespace Dev.Loja.Carros.Data
             : base(options)
         {
         }
+        public DbSet<Carro> Carros { get; set; }
     }
 }
