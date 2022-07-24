@@ -19,6 +19,7 @@ namespace Dev.Loja.Carros.Models
         
         public string LinkImg { get; set; }
       
+        //
         public Carro()
         {
             Id = Guid.NewGuid();
